@@ -9,16 +9,17 @@
 </head>
 <body>
     <button onclick="subscribe()">Subscribe</button>
-    <script>
 
+    <script>
     addEventListener('load', async() => {
     let sw = await navigator.serviceWorker.register('./sw.js');
     console.log(sw);
-})
+    });
+
     async function subscribe() {
     let sw = await navigator.serviceWorker.ready;
     let push = await sw.pushManager.subscribe({
-        userVisibility: true,
+        userVisibilOnly: true,
         applicationServerkey:
         'BDc7gIaJjKSJBuQEwgXaYOZx_T9PCFODtW0AX0wzKSUu-Bl7543LFjjYZRE0D7pHXxZ48wFdXSzYzLv6IocniLk'
         })
