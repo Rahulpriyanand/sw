@@ -1,11 +1,10 @@
 var push = require('web-push');
 
 let vapidkeys = {
-    publicKey: 'BEKSeglmefKTmgHI1qA_zA8xbR-8GZtXtftE0PR9Jp6TTur1dgcqOH2Zk0gfT1t0G6Z7oLMu_Om_GWalzv1IhVQ',
-    privateKey: 'ZfAbWevEUQLkQIKy9y74Imz8JeA6fZmGI7q25wQsQc4'
+    publicKey: 'BDc7gIaJjKSJBuQEwgXaYOZx_T9PCFODtW0AX0wzKSUu-Bl7543LFjjYZRE0D7pHXxZ48wFdXSzYzLv6IocniLk',
+    privateKey: 'dTO2T9s-y6vnOh7U3Yb5c-Z0KXOt5RKHMZ1yP0KDpic'
   }
-
-  push.setVapidDetails('mailto:rahulshakyaame@gmail.com' vapidkeys.publicKey, vapidkeys.privateKey)
+push.setVapidDetails('mailto:rahulshakyaame@gmail.com' vapidkeys.publicKey, vapidkeys.privateKey)
 
 let sub = {};
 
