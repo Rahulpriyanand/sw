@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <button onclick="subscribe()">Subscribe</button>
@@ -19,7 +18,7 @@
     async function subscribe() {
     let sw = await navigator.serviceWorker.ready;
     let push = await sw.pushManager.subscribe({
-        userVisibilOnly: true,
+        userVisibleOnly: true,
         applicationServerkey:
         'BDc7gIaJjKSJBuQEwgXaYOZx_T9PCFODtW0AX0wzKSUu-Bl7543LFjjYZRE0D7pHXxZ48wFdXSzYzLv6IocniLk'
         })
