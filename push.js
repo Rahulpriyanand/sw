@@ -6,6 +6,6 @@ let vapidkeys = {
   } 
 push.setVapidDetails('mailto:rahulshakyaame@gmail.com' vapidkeys.publicKey, vapidkeys.privateKey)
 
-let sub = { };
+let sub = {};
 
   push.sendNotification(sub, 'test message ')
