@@ -6,6 +6,14 @@ let vapidkeys = {
   } 
 push.setVapidDetails('mailto:rahulshakyaame@gmail.com' vapidkeys.publicKey, vapidkeys.privateKey)
 
-let sub = {};
+let sub = {
+    endpoint: 
+    'https://fcm.googleapis.com/fcm/send/ebiU4OjzeBs:APA91bGldVDPe0Gni1VWp4tFXzMHw8RJ8JwGe1bosooLY_RKcLUOhv2nux1KwKx855AC5LRr0psV3aEXB175w9kXC7Y40YBuyhQUsNlBjYka8DCHGB3tkEdqNezIV5DVJPTxrzTOgTEy',
+expirationTime: null,
+keys: {
+    p256dh: 'BKNILhpaE1xR9t2_S9xZJ8CuqbcJlMwRAtbNvjFJaT6XN_7YiduA5F-kqAMictXcOn6UgqqNUOszYwC3BtZcrS0',
+auth: 'zX4JR7GhuxTJcOA22GNT-A'
+    }
+};
 
   push.sendNotification(sub, 'test message ')
