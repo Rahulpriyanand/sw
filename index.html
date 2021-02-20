@@ -11,8 +11,8 @@
     <script>
 
     addEventListener('load', async() => {
-    let sw = await navigator.serviceWorker.register('./sw.js') 
-    console.log(sw)
+    let sw = await navigator.serviceWorker.register('./sw.js');
+    console.log(sw);
 })
     async function subscribe() {
     let sw =await navigator.serviceWorker.ready;
@@ -23,7 +23,6 @@
     })
     console.log(JSON.stringify(push));
     }
-
     </script>
 </body>
 </html>
