@@ -1,7 +1,7 @@
 self.addEventListener('push', function(e) {
     var options = {
       body: 'This notification was generated from a push!',
-      icon: 'https://www.amecet.in/index.php',
+      icon: 'https://www.amecet.in/images/logo.png',
       vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
@@ -9,7 +9,7 @@ self.addEventListener('push', function(e) {
       },
       actions: [
         {action: 'explore', title: 'Read More.',
-          icon: 'https://www.amecet.in/index.php'},
+          icon: 'https://www.amecet.in/images/logo.png'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
       ]
