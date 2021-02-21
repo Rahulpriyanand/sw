@@ -6,6 +6,11 @@ let vapidkeys = {
   } 
 push.setVapidDetails('mailto:rahulshakyaame@gmail.com', vapidkeys.publicKey, vapidkeys.privateKey)
 
-let sub = {"endpoint":"https://updates.push.services.mozilla.com/wpush/v2/gAAAAABgM…bU2NflvWah9S6oY6Z6BvPTYlOQVCh2pko6SX--9xliADPBQLb3Uq3GBvBuM8","keys":{"auth":"yhmtKEimx6ySiMO0TVMJhA","p256dh":"BFnmfLLJWJDHYzAaY3hAMztjyJ00HEFJwXrT8o5MEygtcAgms2fMfJ55g5lLoPbjDeRUe34uX4zcERxYVuo0N7g"}};
+let sub = {endpoint:'https://updates.push.services.mozilla.com/wpush/v2/gAAAAABgM…bU2NflvWah9S6oY6Z6BvPTYlOQVCh2pko6SX--9xliADPBQLb3Uq3GBvBuM8',
+keys:{
+    auth:'yhmtKEimx6ySiMO0TVMJhA',
+    p256dh:
+    'BFnmfLLJWJDHYzAaY3hAMztjyJ00HEFJwXrT8o5MEygtcAgms2fMfJ55g5lLoPbjDeRUe34uX4zcERxYVuo0N7g'
+        }};
 
   push.sendNotification(sub, 'test message');
