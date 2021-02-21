@@ -8,7 +8,7 @@ self.addEventListener('push', function(e) {
         primaryKey: '2'
       },
       actions: [
-        {action: 'explore', title: 'Hai, welcone to subscribe us hang On.',
+        {action: 'explore', title: 'Read More.',
           icon: 'https://www.amecet.in/index.php'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
