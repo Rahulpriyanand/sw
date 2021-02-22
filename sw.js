@@ -7,13 +7,20 @@ self.addEventListener('push', function(e) {
         dateOfArrival: Date.now(),
         primaryKey: '2'
       },
-      actions: [
-        {action: 'https://www.amecet.in/images/logo.png', title: 'Read More',
+     actions: [
+        {action: 'explore', title: 'Read More',
           icon: 'exampl.png'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
       ]
     };
+    if (action == 'close'){
+      Notification.close();
+    }
+    else{
+      clients.openWindow('https://dittofix.com');
+      Notification.close();
+    }
     e.waitUntil(
       self.registration.showNotification('Hello world!', options)
     );
