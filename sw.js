@@ -10,7 +10,7 @@ self.addEventListener('push', function(e) {
       actions: [
         {action: 'explore', title: 'Read More.',
           icon: 'https://www.amecet.in/images/logo.png'},
-        {action: [{action:"open_url", title: 'Read More',
+        {action: [{action:"https://www.amecet.in/images/logo.png", title: 'Read More',
           icon: 'images/xmark.png'},
       ]
     };
