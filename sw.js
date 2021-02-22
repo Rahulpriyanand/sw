@@ -15,11 +15,11 @@ self.addEventListener('push', function(e) {
       ]
     };
     if (action === 'close'){
-      Notification.close();
+      notification.close();
     }
     else{
       clients.openWindow('https://www.amecet.in/');
-      Notification.close();
+      notification.close();
     }
     e.waitUntil(
       self.registration.showNotification('Hello world!', options)
