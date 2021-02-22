@@ -3,6 +3,8 @@ self.addEventListener('push', function(e) {
       body: 'This notification was generated from a push! https://www.amecet.in/images/logo.png ',
       icon: 'https://www.amecet.in/images/logo.png',
       image: "https://www.amecet.in/images/logo.png",
+      badge: "https://www.amecet.in/images/logo.png",
+      sound: "https://www.soundjay.com/button/beep-01a.wav",
       vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
@@ -15,6 +17,7 @@ self.addEventListener('push', function(e) {
           icon: 'https://www.amecet.in/images/logo.png'},
       ]
     };
+
     e.waitUntil(
       self.registration.showNotification('Hello world!', options)
     );
