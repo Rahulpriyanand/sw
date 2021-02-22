@@ -11,10 +11,10 @@ self.addEventListener('push', function(e) {
         {action: 'explore', title: 'Read More',
           icon: 'https://www.amecet.in/images/logo.png'},
         {action: 'close', title: 'Close',
-          icon: 'images/xmark.png'},
+          icon: 'https://www.amecet.in/images/logo.png'},
       ]
     };
-    if (action == 'close'){
+    if (action === 'close'){
       Notification.close();
     }
     else{
