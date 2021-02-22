@@ -4,7 +4,7 @@ self.addEventListener('push', function(e) {
       icon: 'https://www.amecet.in/images/logo.png',
       image: "https://www.amecet.in/images/logo.png",
       badge: "https://www.amecet.in/images/logo.png",
-      sound: 'https://www.soundjay.com/button/beep-09.mp3',
+      silent: 'true',
       vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
