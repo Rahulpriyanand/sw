@@ -7,20 +7,13 @@ self.addEventListener('push', function(e) {
         dateOfArrival: Date.now(),
         primaryKey: '2'
       },
-     actions: [
-        {action: 'explore', title: 'Read More',
+      actions: [
+        {action: 'explore', title: 'Read More.',
           icon: 'https://www.amecet.in/images/logo.png'},
         {action: 'close', title: 'Close',
           icon: 'https://www.amecet.in/images/logo.png'},
       ]
     };
-    if (action === 'close'){
-      notification.close();
-    }
-    else{
-      clients.openWindow('https://www.amecet.in/');
-      notification.close();
-    }
     e.waitUntil(
       self.registration.showNotification('Hello world!', options)
     );
