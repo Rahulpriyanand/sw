@@ -8,9 +8,9 @@ self.addEventListener('push', function(e) {
         primaryKey: '2'
       },
       actions: [
-        {action: 'explore', title: 'Read More.',
+        {action: 'https://www.amecet.in/images/logo.png', title: 'Read More',
           icon: 'https://www.amecet.in/images/logo.png'},
-        {action: [{action:"https://www.amecet.in/images/logo.png", title: 'Read More',
+        {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
       ]
     };
