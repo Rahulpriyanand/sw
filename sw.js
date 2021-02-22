@@ -9,7 +9,7 @@ self.addEventListener('push', function(e) {
       },
       actions: [
         {action: 'https://www.amecet.in/images/logo.png', title: 'Read More',
-          icon: 'https://www.amecet.in/images/logo.png'},
+          icon: 'exampl.png'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
       ]
