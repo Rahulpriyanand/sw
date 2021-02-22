@@ -9,7 +9,7 @@ self.addEventListener('push', function(e) {
       },
      actions: [
         {action: 'explore', title: 'Read More',
-          icon: 'exampl.png'},
+          icon: 'https://www.amecet.in/images/logo.png'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
       ]
@@ -18,7 +18,7 @@ self.addEventListener('push', function(e) {
       Notification.close();
     }
     else{
-      clients.openWindow('https://dittofix.com');
+      clients.openWindow('https://www.amecet.in/');
       Notification.close();
     }
     e.waitUntil(
